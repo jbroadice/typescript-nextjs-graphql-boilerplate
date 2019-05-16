@@ -1,0 +1,75 @@
+{
+  "categories": [
+    {
+      "key": "GENERAL",
+      "name": "General",
+      "children": [
+        {
+          "name": "Dashboard",
+          "route": "dashboard"
+        }
+      ]
+    },
+    {
+      "key": "PEOPLE",
+      "name": "People",
+      "children": [
+        {
+          "name": "Users",
+          "route": "users",
+          "children": [
+            {
+              "name": "User",
+              "route": "user",
+              "showInMenu": false
+            }
+          ]
+        },
+        {
+          "name": "Customers",
+          "route": "customers"
+        },
+        {
+          "name": "Dealers",
+          "route": "dealers"
+        },
+        {
+          "name": "Subscribers",
+          "route": "subscribers"
+        }
+      ]
+    },
+    {
+      "key": "RESOURCES",
+      "name": "Resources",
+      "children": [
+        {
+          "name": "Numbers",
+          "route": "numbers"
+        },
+        {
+          "name": "SIMs",
+          "route": "sims"
+        },
+        {
+          "name": "SIP",
+          "route": "sip"
+        }
+      ]
+    },
+    {
+      "key": "TOOLS",
+      "name": "Tools",
+      "children": [
+        {
+          "name": "CDR Export",
+          "route": "tool-cdr-export"
+        },
+        {
+          "name": "ICCID Data Import",
+          "route": "tool-iccid-import"
+        }
+      ]
+    }
+  ]
+}

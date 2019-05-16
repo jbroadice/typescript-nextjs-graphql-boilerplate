@@ -1,0 +1,24 @@
+{
+  "schema": [
+    "states/**/schema.graphql",
+    "../typescript-graphql-modules-api/build/schema.graphql"
+  ],
+  "documents": [
+    "graphql/queries/**/*.graphql",
+    "states/**/queries.graphql"
+  ],
+  "overwrite": true,
+  "generates": {
+    "./types-generated.tsx": {
+      "config": {
+        "noNamespaces": true
+      },
+      "plugins": [
+        "typescript-common",
+        "typescript-server",
+        "typescript-client",
+        "typescript-react-apollo"
+      ]
+    }
+  }
+}

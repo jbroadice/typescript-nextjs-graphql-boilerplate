@@ -1,0 +1,17 @@
+$user-role-colours: (
+  admin-bg: rgb(145, 97, 165),
+  admin: rgb(255, 255, 255),
+
+  customer-bg: rgb(120, 152, 181),
+  customer: rgb(255, 255, 255),
+
+  dealer-bg: rgb(185, 226, 221),
+  dealer: rgba(0, 0, 0, 0.85)
+);
+
+$menu-category-colours: (
+  general: $cyan,
+  people: $purple,
+  resources: $turquoise,
+  tools: $yellow
+);

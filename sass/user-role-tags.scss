@@ -1,0 +1,14 @@
+.tag:not(body).is-user-role-admin {
+  background-color: map-get($user-role-colours, admin-bg);
+  color: map-get($user-role-colours, admin);
+}
+
+.tag:not(body).is-user-role-customer {
+  background-color: map-get($user-role-colours, customer-bg);
+  color: map-get($user-role-colours, customer);
+}
+
+.tag:not(body).is-user-role-dealer {
+  background-color: map-get($user-role-colours, dealer-bg);
+  color: map-get($user-role-colours, dealer);
+}

@@ -1,0 +1,58 @@
+fragment PaginationInfo on PaginatedList {
+  pageInfo {
+    count
+    page
+    hasNextPage
+    countPages
+    limit
+  }
+}
+
+mutation loginUser($email:String!, $password:String!) {
+  login(email:$email, password:$password) {
+    token
+    refreshToken
+  }
+}
+
+query getLoggedInUser {
+  me {
+    id
+    firstName
+    lastName
+  }
+}
+
+query getUser($id: ID!) {
+  user(id: $id) {
+    id
+    firstName
+    lastName
+    roleType
+    emails {
+      email
+      verified
+      primary
+    }
+    timestamps {
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+query getUsers($name: String, $roleType: UserRoleType, $page: Int) {
+  users(name: $name, roleType: $roleType, page: $page) {
+    data {
+      id
+      firstName
+      lastName
+      roleType
+      timestamps {
+        createdAt
+      }
+    }
+    ...PaginationInfo
+  }
+}
+

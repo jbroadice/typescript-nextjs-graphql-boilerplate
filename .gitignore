@@ -1,0 +1,14 @@
+.env
+
+# Build Output
+bundles
+.next
+.DS_Store
+logs
+types-generated.tsx
+manifest.json
+
+yarn-error.log
+
+# Dependencies
+node_modules

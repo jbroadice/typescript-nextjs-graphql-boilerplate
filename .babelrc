@@ -1,0 +1,23 @@
+{
+  "presets": ["next/babel", "@zeit/next-typescript/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@components/*": ["./components"],
+          "@hocs/*": ["./hocs"],
+          "@pages/*": ["./pages"],
+          "@lib/*": ["./lib"],
+          "@types-generated": ["./types-generated"],
+          "@routes": ["./server/routes"],
+          "@states": ["./states"],
+          "@sass": ["./sass"]
+        }
+      }
+    ],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }]
+  ]
+}

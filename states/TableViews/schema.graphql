@@ -1,0 +1,18 @@
+type TablePaginationLimit {
+  id: String!
+  limit: Int!
+}
+
+type UsersFilterPanel {
+  name: String
+  roleType: String
+}
+
+type FilterPanels {
+  users: UsersFilterPanel!
+}
+
+type Query {
+  usersFilterPanel: UsersFilterPanel!
+  tablePaginationLimits(id: String!): TablePaginationLimit!
+}

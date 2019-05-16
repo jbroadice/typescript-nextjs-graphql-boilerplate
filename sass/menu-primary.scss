@@ -1,0 +1,61 @@
+.menu-list {
+  border-left: transparent 5px solid;
+  border-radius: 5px 0px 0px 5px;
+
+  &.category-general {
+    border-color: map-get($menu-category-colours, general);
+
+    a {
+      background-color: transparentize(map-get($menu-category-colours, general), 0.97);
+      &:hover {
+        background-color: transparentize(map-get($menu-category-colours, general), 0.9);
+      }
+    }
+  }
+
+  &.category-people {
+    border-color: map-get($menu-category-colours, people);
+
+    a {
+      background-color: transparentize(map-get($menu-category-colours, people), 0.97);
+      &:hover {
+        background-color: transparentize(map-get($menu-category-colours, people), 0.9);
+      }
+    }
+  }
+
+  &.category-resources {
+    border-color: map-get($menu-category-colours, resources);
+
+    a {
+      background-color: transparentize(map-get($menu-category-colours, resources), 0.97);
+      &:hover {
+        background-color: transparentize(map-get($menu-category-colours, resources), 0.9);
+      }
+    }
+  }
+
+  &.category-tools {
+    border-color: map-get($menu-category-colours, tools);
+
+    a {
+      background-color: transparentize(map-get($menu-category-colours, tools), 0.97);
+      &:hover {
+        background-color: transparentize(map-get($menu-category-colours, tools), 0.9);
+      }
+    }
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.6em 0.75em;
+
+    &.is-active {
+      position: relative;
+      background-color: white;
+      color: inherit;
+      box-shadow: rgba(0,0,0,0.1) -2px 1px 2px;
+    }
+  }
+}

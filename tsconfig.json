@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "diagnostics": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@hocs/*": ["./hocs/*"],
+      "@pages/*": ["./pages/*"],
+      "@lib/*": ["./lib/*"],
+      "@types-generated": ["./types-generated"],
+      "@routes": ["./server/routes"],
+      "@states": ["./states"],
+      "@sass": ["./sass/*"]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query UsersPageClientData {
+  usersFilterPanel @client {
+    name
+    roleType
+  }
+}
+
+query TableViewPaginationOptions($id: String!) {
+  tablePaginationLimits(id: $id) @client {
+    limit
+  }
+}
